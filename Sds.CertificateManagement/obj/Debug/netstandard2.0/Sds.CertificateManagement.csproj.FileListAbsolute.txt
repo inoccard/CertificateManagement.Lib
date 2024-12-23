@@ -1,0 +1,10 @@
+C:\inoccard\Projects\CertificateManagement.Lib\Sds.CertificateManagement\bin\Debug\netstandard2.0\Sds.CertificateManagement.deps.json
+C:\inoccard\Projects\CertificateManagement.Lib\Sds.CertificateManagement\bin\Debug\netstandard2.0\Sds.CertificateManagement.dll
+C:\inoccard\Projects\CertificateManagement.Lib\Sds.CertificateManagement\bin\Debug\netstandard2.0\Sds.CertificateManagement.pdb
+C:\inoccard\Projects\CertificateManagement.Lib\Sds.CertificateManagement\obj\Debug\netstandard2.0\Sds.CertificateManagement.csproj.AssemblyReference.cache
+C:\inoccard\Projects\CertificateManagement.Lib\Sds.CertificateManagement\obj\Debug\netstandard2.0\Sds.CertificateManagement.GeneratedMSBuildEditorConfig.editorconfig
+C:\inoccard\Projects\CertificateManagement.Lib\Sds.CertificateManagement\obj\Debug\netstandard2.0\Sds.CertificateManagement.AssemblyInfoInputs.cache
+C:\inoccard\Projects\CertificateManagement.Lib\Sds.CertificateManagement\obj\Debug\netstandard2.0\Sds.CertificateManagement.AssemblyInfo.cs
+C:\inoccard\Projects\CertificateManagement.Lib\Sds.CertificateManagement\obj\Debug\netstandard2.0\Sds.CertificateManagement.csproj.CoreCompileInputs.cache
+C:\inoccard\Projects\CertificateManagement.Lib\Sds.CertificateManagement\obj\Debug\netstandard2.0\Sds.CertificateManagement.dll
+C:\inoccard\Projects\CertificateManagement.Lib\Sds.CertificateManagement\obj\Debug\netstandard2.0\Sds.CertificateManagement.pdb
