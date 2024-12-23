@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\inoccard\\Projects\\Sds.CertificateManagement.Lib\\",
+  "WorkspaceRootPath": "C:\\inoccard\\Projects\\CertificateManagement.Lib\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{920B617B-CC01-4111-9973-6987F36ACA00}|Sds.CertificateManagement\\Sds.CertificateManagement.csproj|c:\\inoccard\\projects\\sds.certificatemanagement.lib\\sds.certificatemanagement\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{920B617B-CC01-4111-9973-6987F36ACA00}|Sds.CertificateManagement\\Sds.CertificateManagement.csproj|c:\\inoccard\\projects\\certificatemanagement.lib\\sds.certificatemanagement\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{920B617B-CC01-4111-9973-6987F36ACA00}|Sds.CertificateManagement\\Sds.CertificateManagement.csproj|solutionrelative:sds.certificatemanagement\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -48,11 +48,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\inoccard\\Projects\\Sds.CertificateManagement.Lib\\Sds.CertificateManagement\\Class1.cs",
+              "DocumentMoniker": "C:\\inoccard\\Projects\\CertificateManagement.Lib\\Sds.CertificateManagement\\Class1.cs",
               "RelativeDocumentMoniker": "Sds.CertificateManagement\\Class1.cs",
-              "ToolTip": "C:\\inoccard\\Projects\\Sds.CertificateManagement.Lib\\Sds.CertificateManagement\\Class1.cs",
+              "ToolTip": "C:\\inoccard\\Projects\\CertificateManagement.Lib\\Sds.CertificateManagement\\Class1.cs",
               "RelativeToolTip": "Sds.CertificateManagement\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-23T10:03:02.205Z",
               "EditorCaption": ""

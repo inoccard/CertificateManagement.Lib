@@ -2,6 +2,23 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Sds.CertificateManagement</Title>
+    <Authors>Senhor dos Sistemas</Authors>
+    <Description>A certificate management library that allows you to generate certificates for events or courses and send them via email.</Description>
+    <Copyright>Senhor dos Sistemas. All Rights Reserved.</Copyright>
+    <PackageProjectUrl>https://github.com/inoccard/CertificateManagement.Lib</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/inoccard/CertificateManagement.Lib</RepositoryUrl>
+    <PackageTags>certificate;management;.net;.standard</PackageTags>
+    <NeutralLanguage>en</NeutralLanguage>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
