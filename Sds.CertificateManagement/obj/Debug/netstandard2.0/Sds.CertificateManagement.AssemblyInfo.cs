@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sds.CertificateManagement")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43c5b65fb6a9ecf1fb9079d3427f188ac776f487")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sds.CertificateManagement")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sds.CertificateManagement")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
