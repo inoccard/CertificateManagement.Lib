@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using QuestPDF;
 using QuestPDF.Fluent;
 using QuestPDF.Helpers;
 using QuestPDF.Infrastructure;
@@ -14,6 +15,13 @@ namespace Sds.CertificateManagement.Services;
 public class CertificateGeneratorService : ICertificateGenerator
 {
     /// <summary>
+    /// 
+    /// </summary>
+    public CertificateGeneratorService()
+    {
+        Settings.License = LicenseType.Community;
+    }
+    /// <summary>
     /// Generate Certificate
     /// </summary>
     /// <param name="request"></param>
@@ -22,25 +30,7 @@ public class CertificateGeneratorService : ICertificateGenerator
     {
         try
         {
-            var document = Document.Create(container =>
-            {
-                container.Page(page =>
-                {
-                    SetBasicConfiguration(page);
-
-                    page.Content().Column(column =>
-                    {
-                        SetLogo(column);
-
-                        column.Item().PaddingVertical(10).AlignCenter().Text("CERTIFICADO")
-                            .FontSize(28).Bold().FontColor(Colors.Black);
-
-                        SetMainContent(request, column);
-
-                        SetSignatureSpace(column);
-                    });
-                });
-            });
+            var document = CreateCertificateDocument(request);
 
             var filePath = Path.Combine(Path.GetTempPath(), $"{Guid.NewGuid()}.pdf");
 
@@ -50,22 +40,45 @@ public class CertificateGeneratorService : ICertificateGenerator
         }
         catch (FileNotFoundException ex)
         {
-            Console.WriteLine(ex);
+            Console.WriteLine($"File not found: {ex.Message}");
             throw;
         }
         catch (IOException ex)
         {
-            Console.WriteLine(ex);
+            Console.WriteLine($"IO Exception: {ex.Message}");
             throw;
         }
         catch (Exception ex)
         {
-            Console.WriteLine(ex);
+            Console.WriteLine($"Unexpected error: {ex.Message}");
             throw;
         }
     }
-    
-     #region Private Methods
+
+    #region Private Methods
+
+    private static IDocument CreateCertificateDocument(CertificateRequest request)
+    {
+        return Document.Create(container =>
+        {
+            container.Page(page =>
+            {
+                SetBasicConfiguration(page);
+
+                page.Content().Column(column =>
+                {
+                    SetLogo(column);
+
+                    column.Item().PaddingVertical(10).AlignCenter().Text("CERTIFICADO")
+                        .FontSize(28).Bold().FontColor(Colors.Black);
+
+                    SetMainContent(request, column);
+
+                    SetSignatureSpace(column);
+                });
+            });
+        });
+    }
 
     private static void SetBasicConfiguration(PageDescriptor page)
     {
@@ -77,7 +90,7 @@ public class CertificateGeneratorService : ICertificateGenerator
 
     private static void SetLogo(ColumnDescriptor column)
     {
-        var imagePath = Path.Combine(Directory.GetCurrentDirectory(), "img", "OIG.jpeg");
+        var imagePath = Path.Combine(AppContext.BaseDirectory, "img", "OIG.jpeg");
         if (!File.Exists(imagePath))
             throw new FileNotFoundException($"Image not found at {imagePath}");
 
@@ -111,23 +124,18 @@ public class CertificateGeneratorService : ICertificateGenerator
     {
         column.Item().PaddingTop(50).Row(row =>
         {
-            row.RelativeItem().Column(col =>
-            {
-                col.Item().AlignCenter().Text("Prof. Ma. Telma").Bold();
-                col.Item().AlignCenter().Text("Coordenadora do Núcleo");
-            });
+            AddSignature(row, "Prof. Ma. Telma", "Coordenadora do Núcleo");
+            AddSignature(row, "Prof. Me. Julio", "Diretor da Unidade de Ciências");
+            AddSignature(row, "Prof. Dra. Venancia", "Pró-Reitora de Pós-Graduação, Pesquisa e Extensão");
+        });
+    }
 
-            row.RelativeItem().Column(col =>
-            {
-                col.Item().AlignCenter().Text("Prof. Me. Julio").Bold();
-                col.Item().AlignCenter().Text("Diretor da Unidade de Ciências");
-            });
-
-            row.RelativeItem().Column(col =>
-            {
-                col.Item().AlignCenter().Text("Prof. Dra. Venancia").Bold();
-                col.Item().AlignCenter().Text("Pró-Reitora de Pós-Graduação, Pesquisa e Extensão");
-            });
+    private static void AddSignature(RowDescriptor row, string name, string title)
+    {
+        row.RelativeItem().Column(col =>
+        {
+            col.Item().AlignCenter().Text(name).Bold();
+            col.Item().AlignCenter().Text(title);
         });
     }
 
