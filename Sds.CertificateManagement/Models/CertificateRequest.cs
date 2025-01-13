@@ -5,7 +5,7 @@ namespace Sds.CertificateManagement.Models;
 /// <summary>
 /// 
 /// </summary>
-public class CertificateRequest
+public abstract class CertificateRequest
 {
     public string Email { get; set; }
     public string Name { get; set; }

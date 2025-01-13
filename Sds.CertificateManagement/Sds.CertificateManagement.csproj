@@ -8,6 +8,7 @@
     <PackageTags>Certificate;Generator;.NETCore</PackageTags>
     <Description>Este pacote facilita facilita na geração de certificados.</Description>
     <LangVersion>latest</LangVersion>
+    <Nullable>false</Nullable>
   </PropertyGroup>
 
   <ItemGroup>

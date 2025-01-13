@@ -15,12 +15,14 @@ namespace Sds.CertificateManagement.Services;
 public class CertificateGeneratorService : ICertificateGenerator
 {
     /// <summary>
-    /// 
+    /// Initializes a new instance of the <see cref="CertificateGeneratorService"/> class.
     /// </summary>
-    public CertificateGeneratorService()
+    /// <param name="licenseType">The license type for QuestPDF.</param>
+    public CertificateGeneratorService(LicenseType licenseType)
     {
-        Settings.License = LicenseType.Community;
+        Settings.License = licenseType;
     }
+
     /// <summary>
     /// Generate Certificate
     /// </summary>
