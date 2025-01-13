@@ -7,3 +7,5 @@
 /.vs/CertificateManagement/FileContentIndex
 /Sds.CertificateManagement/obj
 /Sds.CertificateManagement/obj/Debug
+/Sds.CertificateGenerator/obj
+/Sds.CertificateGenerator/bin/Debug/netstandard2.0

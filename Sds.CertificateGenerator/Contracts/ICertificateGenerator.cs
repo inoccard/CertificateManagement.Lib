@@ -1,6 +1,6 @@
-﻿using Sds.CertificateManagement.Models;
+﻿using Sds.CertificateGenerator.Models;
 
-namespace Sds.CertificateManagement.Contracts;
+namespace Sds.CertificateGenerator.Contracts;
 
 /// <summary>
 /// 

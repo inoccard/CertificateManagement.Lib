@@ -1,6 +1,6 @@
 using System;
 
-namespace Sds.CertificateManagement.Models;
+namespace Sds.CertificateGenerator.Models;
 
 /// <summary>
 /// 

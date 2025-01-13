@@ -4,10 +4,10 @@ using QuestPDF;
 using QuestPDF.Fluent;
 using QuestPDF.Helpers;
 using QuestPDF.Infrastructure;
-using Sds.CertificateManagement.Contracts;
-using Sds.CertificateManagement.Models;
+using Sds.CertificateGenerator.Contracts;
+using Sds.CertificateGenerator.Models;
 
-namespace Sds.CertificateManagement.Services;
+namespace Sds.CertificateGenerator.Services;
 
 /// <summary>
 /// 

@@ -1,10 +1,10 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using Microsoft.Extensions.DependencyInjection;
 using QuestPDF.Infrastructure;
-using Sds.CertificateManagement.Contracts;
-using Sds.CertificateManagement.Services;
+using Sds.CertificateGenerator.Contracts;
+using Sds.CertificateGenerator.Services;
 
-namespace Sds.CertificateManagement
+namespace Sds.CertificateGenerator
 {
     /// <summary>
     /// 
