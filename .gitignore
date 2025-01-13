@@ -2,4 +2,8 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
+/.idea
+/.vs
 /.vs/CertificateManagement/FileContentIndex
+/Sds.CertificateManagement/obj
+/Sds.CertificateManagement/obj/Debug

@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\inoccard\\Projects\\CertificateManagement.Lib\\Sds.CertificateManagement\\Sds.CertificateManagement.csproj": {
-      "version": "1.0.0",
+      "version": "1.2.0",
       "restore": {
         "projectUniqueName": "C:\\inoccard\\Projects\\CertificateManagement.Lib\\Sds.CertificateManagement\\Sds.CertificateManagement.csproj",
         "projectName": "Sds.CertificateManagement",
@@ -52,11 +52,23 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "QuestPDF": {
+              "target": "Package",
+              "version": "[2024.12.2, )"
             }
           },
           "imports": [
